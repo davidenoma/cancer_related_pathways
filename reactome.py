@@ -1,6 +1,8 @@
 import requests
 
 path_to_gene_set = "/Users/davidenoma/Desktop/PhD._BMB/LONG_LAB/Projects/Pathway_TWAS"
+#This method checks if the pathway is involved in cancer with the
+#reactome api
 def get_pathway_description(pathway_id):
     endpoint = 'https://reactome.org/ContentService/data/query/'
     headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
@@ -21,6 +23,8 @@ def get_pathway_description(pathway_id):
     return description
 
 pathway_data = {}
+#looping through the gene set to obtain the pathway id, names
+#and genes associated with each instance
 with open(path_to_gene_set+"/ReactomePathways.gmt", 'r') as file:
         for line in file:
             line = line.strip()
@@ -36,10 +40,16 @@ with open(path_to_gene_set+"/ReactomePathways.gmt", 'r') as file:
                 }
 finalpathwayids = []
 final_genes = []
+print("Done looping through the geneset. Found ",len(pathway_data)," genes.")
+#creating the final list of pathway ids and genes associated with cancer.
+
+
+print("obtaining the pathways and genes that fall in cancer.")
 for i in pathway_data.values():
     pathway_desc = get_pathway_description(i['pathway_id'])
     if pathway_desc == "cancer":
         finalpathwayids.append(i)
         final_genes.append(i['genes'])
-        # print(i['pathway_id'], pathway_desc)
+        print(i)
+
 print(len(finalpathwayids),len(final_genes))
