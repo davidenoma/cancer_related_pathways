@@ -2,15 +2,21 @@
 
 Using API calls and downloaded gene sets, I have been able to curate the gene and pathways associated with cancer from each of the databases, namely: 
 
-KEGG  
+1.	KEGG  
 
-Migsdb  
+2.	Migsdb  
 
-Netpath  
+3.	Netpath  
 
-Pathway commons  
+4.	Pathway commons  
 
-Reactome  
+5.	Reactome
+  
+6.	WikiPathways
 
-Wikipathways  
+## Tools used include: 
+
+## Outcomes
+This code can obtain pathways and genes associated with all types of cancer. 
+Depending on the researcher's need, the genes and pathway associations may be used for downstream analysis and processing. 
 
