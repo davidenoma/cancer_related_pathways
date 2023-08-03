@@ -1,4 +1,4 @@
-path_to_gene_set = "/Users/davidenoma/Desktop/PhD._BMB/LONG_LAB/Projects/Pathway_TWAS"
+path_to_gene_set = "
 
 #Query with the netpath genesets
 
