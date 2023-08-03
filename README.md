@@ -15,7 +15,7 @@ Using API calls and downloaded gene sets, I have been able to curate the gene an
 6.	WikiPathways
 
 ## Tools used include: 
-
+Requests library for making API calls in python.
 ## Outcomes
 This code can obtain pathways and genes associated with all types of cancer. 
 Depending on the researcher's need, the genes and pathway associations may be used for downstream analysis and processing. 
