@@ -15,7 +15,7 @@ def find_gene_pathway(dataset, gene):
 
     return pathways
 #Gene set downloaded on file to be queried for genes
-path_to_gene_set = "/Users/davidenoma/Desktop/PhD._BMB/LONG_LAB/Projects/Pathway_TWAS"
+path_to_gene_set = "/"
 
 # Example usage
 dataset = path_to_gene_set+ "/migsdb_geneset.gmt"
