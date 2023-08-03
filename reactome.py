@@ -1,6 +1,6 @@
 import requests
 
-path_to_gene_set = "/Users/davidenoma/Desktop/PhD._BMB/LONG_LAB/Projects/Pathway_TWAS"
+path_to_gene_set = ""
 #This method checks if the pathway is involved in cancer with the
 #reactome api
 def get_pathway_description(pathway_id):
